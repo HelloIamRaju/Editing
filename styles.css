@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color:#0e101d;
+  color:#f0ebeb;
+  font-size:1.3rem;
+  
+  
+}
+/* Navigation styles */
+nav {
+    background-color: #0e101d;
+  
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    letter-spacing:1.5px
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+        color:#f0ebeb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #b286f0;
+    transform: scale(1.1);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #0e101d;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 15px;
+    }
+
+    .nav-list li a {
+        color:#f0ebeb;
+        display: block;
+    }
+}
+.logo {
+    color:#f0ebeb;
+    font-weight: bold;
+}
+
+.description {
+    margin: 20px;
+}
+
+/* New section and footer styles */
+.section {
+    padding: 20px;
+  
+}
+/* CSS for the bottom division */
+.bottom {
+background-color: #0e101d; /* Deep background color */
+display: flex;
+justify-content: center;
+align-items: center;
+height: 20vh;
+
+}
+
+/* CSS for the button */
+.btn {
+padding: 10px 20px;
+background-color: #7d55ff; /* Change to your desired background color */
+color: #fff; /* Text color */
+text-decoration: none;
+border-radius: 5px;
+letter-spacing:1.5px;
+font-family: 'Arial', sans-serif; /* Change to your desired font */
+font-size: 1.4rem;
+transition: background-color 0.3s;
+box-shadow:2px 2px 10px #7d55ff;
+
+
+}
+
+/* Hover effect */
+.btn:hover {
+background-color: #7d15ff; /* Change to the hover color you prefer */
+box-shadow:2px 2px 10px #7d15ff;
+
+}
+
+.footer {
+    
+    padding: 20px;
+    
+}
+
+
+.section p,li{margin-bottom:50px;font-family:sans-serif;letter-spacing:1.5px;
+}
+
+body h2{color:#8d85ff}
+
+li{list-style:none}
+
+/* Initially, hide the sections */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* When in view, fade in and slide up */
+.section.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+     button {
+       background-color: #7d15ff;
+       color: white;
+       border: none;
+       padding: 10px 20px;
+       cursor: pointer;
+       border-radius: 5px;
+     }
+
+     button:hover {
+       background-color: #7d11ff;
+     }
+
+     .read-more-content {
+       display: none;
+           }
