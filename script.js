@@ -36,5 +36,5 @@ readMoreButtons.forEach((button, index) => {
       button.textContent = 'Read Less';
     }
     isReadMore = !isReadMore;
-  });
+  });
 });
